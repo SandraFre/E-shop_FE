@@ -15,12 +15,38 @@
 .h-600{
     height:600px;
 }
+
+.h-400{
+    height:400px;
+}
+
 .font-10{
     font-size: 10px;
 }
 
 .carousel-item img{
     justify-content: center;
+}
+
+footer{
+    color: #9B9D8C;
+}
+
+.map-container{
+    position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.map-container>iframe{
+    position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 
