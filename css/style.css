@@ -9,7 +9,10 @@
 
 .icon{
     color: #ffc107;
-    margin-left: auto;
+}
+
+.icon:hover{
+    color: #FF9300;
 }
 
 .h-600{
@@ -47,6 +50,10 @@ footer{
   right: 0;
   width: 100%;
   height: 100%;
+}
+
+.input-quantity{
+    border: 1px solid #CED4DA;
 }
 
 
