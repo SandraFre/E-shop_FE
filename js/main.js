@@ -18,15 +18,7 @@ $(function () {
         console.log(response.status);
     }
 
-    console.log('ready');
-
-    console.log(products);
-
-
-
-    
        
-
     function fillPopular(array) {
         let cards = '';
         array.forEach(function (item) {
