@@ -65,3 +65,11 @@ footer{
 
 }
 
+.card{
+    width: 18rem;
+}
+
+.card-image{
+    height: 250px;
+}
+
