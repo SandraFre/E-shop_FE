@@ -1,6 +1,7 @@
 $(function () {
     var products = [];
     var cart = [];
+    var count = 0;
 
     $.ajax({
         url: 'https://fakestoreapi.com/products',
@@ -32,16 +33,20 @@ $(function () {
         searchedItem += '<h4 class="fst-italic">' + search + '</h4>';
         $('#searchedItem').html(searchedItem);
         fillSearched(filteredArray);
-    })
+    });
 
     $('#addToCart').click(function () {
-        addToCart();
+        addToCart(count);
+        count++;
+    });
 
-    })
-
-    function addToCart(item) {
-        $('#cartItemCount').html(count);
-
+    function addToCart(count) {
+        count++;
+        let cartCount = '';
+        cartCount += '<span' +
+            'class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary font-10">' + count +
+            '<span class="visually-hidden">cart items</span></span>';
+        $('#cartItemCount').html(cartCount);
     }
 
 
@@ -59,7 +64,7 @@ $(function () {
                     '<h5 class="card-title">' + item.title + '</h5>' +
                     '<p class="card-text text-ellipsis">' + item.description + '</p>' +
                     '<h6>Price: ' + item.price + ' Eur</h6>' +
-                    '<a id="addToCart" href="#" class="btn btn-warning" type="button">Add to cart</a>' +
+                    '<a id="addToCart" href="" class="btn btn-warning" type="button">Add to cart</a>' +
                     '</div >' +
                     '</div >' +
                     '</div >'
