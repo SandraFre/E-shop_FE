@@ -35,19 +35,19 @@ $(function () {
         fillSearched(filteredArray);
     });
 
-    $(document).on('click', '#addToCart')(function () {
-        count+=1
-        addToCart(count);
-    });
+    // $(document).on('click', '#addToCart')(function () {
+    //     count+=1
+    //     addToCart(count);
+    // });
 
-    function addToCart(count) {
+    // function addToCart(count) {
        
-        let cartCount = '';
-        cartCount += '<span' +
-            'class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary font-10">' + count +
-            '<span class="visually-hidden">cart items</span></span>';
-        $('#cartItemCount').html(cartCount);
-    }
+    //     let cartCount = '';
+    //     cartCount += '<span' +
+    //         'class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary font-10">' + count +
+    //         '<span class="visually-hidden">cart items</span></span>';
+    //     $('#cartItemCount').html(cartCount);
+    // }
 
 
     function fillPopular(array) {
