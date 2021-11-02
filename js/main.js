@@ -36,6 +36,7 @@ $(function () {
 
     function fillSearched(array) {
         if (array.length > 0) {
+            $('#popular').addClass('d-none');
             $('#searchedItems').removeClass('d-none');
             let cards = '';
             array.forEach(function (item) {
@@ -47,15 +48,17 @@ $(function () {
                     '<h5 class="card-title">' + item.title + '</h5>' +
                     '<p class="card-text text-ellipsis">' + item.description + '</p>' +
                     '<h6>Price: ' + item.price + ' Eur</h6>' +
-                    '<a href="#" class="btn btn-warning ">Add to cart</a>' +
+                    '<a id="addToCart" href="#" class="btn btn-warning" type="button">Add to cart</a>' +
                     '</div >' +
                     '</div >' +
                     '</div >'
             });
             $('#searchedProducts').html(cards);
-            $('#popular').addClass('d-none');
         }
         else {
+            let noItems = '';
+            noItems += '<h6 class="fst-italic">Sorry, no items found...</h6>'
+            $('#searchedProducts').html(noItems);
 
         }
     }
