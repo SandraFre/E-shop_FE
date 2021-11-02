@@ -62,7 +62,7 @@ $(function () {
                     '<h5 class="card-title">' + item.title + '</h5>' +
                     '<p class="card-text text-ellipsis">' + item.description + '</p>' +
                     '<h6>Price: ' + item.price + ' Eur</h6>' +
-                    '<a id="addToCart" href="" class="btn btn-warning ">Add to cart</a>' +
+                    '<div id="addToCart" class="btn btn-warning ">Add to cart</div>' +
                     '</div >' +
                     '</div >' +
                     '</div >'
@@ -86,7 +86,7 @@ $(function () {
                     '<h5 class="card-title">' + item.title + '</h5>' +
                     '<p class="card-text text-ellipsis">' + item.description + '</p>' +
                     '<h6>Price: ' + item.price + ' Eur</h6>' +
-                    '<a id="addToCart" href="" class="btn btn-warning" type="button">Add to cart</a>' +
+                    '<div id="addToCart" class="btn btn-warning" type="button">Add to cart</div>' +
                     '</div >' +
                     '</div >' +
                     '</div >'
@@ -112,7 +112,7 @@ $(function () {
                 '<h5 class="card-title">' + item.title + '</h5>' +
                 '<p class="card-text text-ellipsis">' + item.description + '</p>' +
                 '<h6>Price: ' + item.price + ' Eur</h6>' +
-                '<a id="addToCart" href="" class="btn btn-warning ">Add to cart</a>' +
+                '<div id="addToCart" href="" class="btn btn-warning ">Add to cart</div>' +
                 '</div >' +
                 '</div >' +
                 '</div >'
