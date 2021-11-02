@@ -35,13 +35,13 @@ $(function () {
         fillSearched(filteredArray);
     });
 
-    $('#addToCart').click(function () {
+    $(document).on('click', '#addToCart')(function () {
+        count+=1
         addToCart(count);
-        count++;
     });
 
     function addToCart(count) {
-        count++;
+       
         let cartCount = '';
         cartCount += '<span' +
             'class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary font-10">' + count +
@@ -62,7 +62,7 @@ $(function () {
                     '<h5 class="card-title">' + item.title + '</h5>' +
                     '<p class="card-text text-ellipsis">' + item.description + '</p>' +
                     '<h6>Price: ' + item.price + ' Eur</h6>' +
-                    '<div id="addToCart" class="btn btn-warning ">Add to cart</div>' +
+                    '<div id="addToCart" class="btn btn-warning" type="button">Add to cart</div>' +
                     '</div >' +
                     '</div >' +
                     '</div >'
