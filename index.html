@@ -18,7 +18,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="">
                         <img class="logo" src="img/logo.png">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -28,9 +28,8 @@
 
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <form class="d-flex m-auto ">
-                            <input class="form-control me-2 search" type="search" placeholder="Search"
-                                aria-label="Search">
-                            <button class="btn btn-outline-warning" type="submit">Search</button>
+                            <input id="searchText" class="form-control me-2 search-input" type="text" placeholder="Search">
+                            <button id="search" class="btn btn-outline-warning" type="button" >Search</button>
                         </form>
                         <ul class="navbar-nav">
                             <li class="nav-item">
@@ -96,14 +95,21 @@
 
         <div class="container mt-5" id="popular">
             <h4 class="mb-3">Most popular</h4>
-            <div class="row" id="popularProducts"> 
-                
-            </div>
+            <div class="row" id="popularProducts"></div>
             <div class="row mt-5">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-md-between justify-content-center">
-                <a class="btn btn-warning" href="./pages/products.html">More products...</a>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-md-between justify-content-center">
+                    <a class="btn btn-warning" href="./pages/products.html">More products...</a>
+                </div>
             </div>
         </div>
+
+        <div class="container mt-5 d-none" id="searchedItems">
+            <div class="container mb-3 d-flex">
+                <h4 class="me-3">Searched:</h4>
+                <div id="searchedItem"></div>
+            </div>
+            <div class="row" id="searchedProducts"></div>
+            
         </div>
 
     </main>

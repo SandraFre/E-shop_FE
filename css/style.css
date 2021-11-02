@@ -3,7 +3,7 @@
     height: auto;
 }
 
-.search{
+.search-input{
     width:500px;
 }
 
@@ -71,5 +71,9 @@ footer{
 
 .card-image{
     height: 250px;
+}
+
+.d-none{
+    display: none;
 }
 
